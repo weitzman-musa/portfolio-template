@@ -10,6 +10,7 @@ menu:
 #-------------------------------
 # Contact Section
 
+social_label: Connect
 social:
 - {icon: 'twitter',   link: 'https://twitter.com/paululele'}
 - {icon: 'instagram', link: 'https://instagram.com/paululele'}

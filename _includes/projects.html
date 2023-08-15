@@ -1,13 +1,18 @@
-<section>
-  <div class="project-container">
+<main>
+  <h2>Projects</h2>
+  <div class="projects-container">
     {% for project in site.projects %}
-      <a href="{{ project.url }}">
-        <div class="project-unit" data-folder="{{ project.url }}" style="background-image: url({{ project.thumbnail | relative_url }})">
-          <div class="project-overlay">
-            <strong>{{ project.title }} <i class="fa fa-arrow-right" aria-hidden="true"></i></strong>
-          </div>
+      <a class="project-link" href="{{ project.url }}">
+        <div class="project-thumbnail-wrapper">
+          <img class="project-thumbnail" src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}">
+        </div>
+        <div class="project-label">
+          {{ project.title }}
+        </div>
+        <div class="project-link-arrow">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
       </a>
     {% endfor %}
   </div>
-</section>
+</main>

@@ -4,6 +4,7 @@
       <p>{{ site.data.settings.footer }}</p>
     </div>
     <div class="social-media">
+      <h2 class="social-media-label">{{ site.data.settings.social_label }}</h2>
       <nav>
         {% for item in site.data.settings.social %}
           <a href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
