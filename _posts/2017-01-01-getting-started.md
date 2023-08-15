@@ -1,17 +1,9 @@
-# Portfolio Template for MUSA
+---
+layout: post
+title: "Getting Started"
+---
 
-This is a template for a portfolio website for MUSA students. It borrows some styles from the [Urban Spatial Analytics](https://www.design.upenn.edu/urban-spatial-analytics) website, and provides the following sections out of the box:
-
-- **About Me:** You can use this space for a headshot, a short bio and/or work statement, and links to your GitHub and social media profiles. You can also include contact informatin (email address) here.
-- **Projects:** This section is for your projects. You can add as many as you want, and they will be displayed in a grid. Each project can have a title, an image, a short description, a link to the project's GitHub repository, and a link to the project's website (if applicable). You can also add longer project descriptions, which will be displayed on a separate page. This can be useful when the there are particular parts of the work that you want to highlight that may not be immediately apparent from the project's website.
-- **Resume:** This section is for your resume. You can upload a PDF of your resume and it will be linked from . You can also add a link to a PDF of your resume, which will be displayed as a button.
-- **Blog:** This section is for your blog posts. You can add as many as you want, and they will be displayed in a grid. Each blog post can have a title, an image, a short description, and a link to the post's website (if applicable). You can also add longer blog post descriptions, which will be displayed on a separate page. This can be useful when the there are particular parts of the work that you want to highlight that may not be immediately apparent from the post's website.
-
-This template is based heavily on the [Portfolio Jekyll Theme](https://github.com/LeNPaul/portfolio-jekyll-theme#what-is-jekyll), the documentation for which is reproduced below.
-
---------------------
-
-This is a Jekyll theme built using the [DevTips Starter Kit](http://devtipsstarterkit.com/) as a foundation for starting, and following closely the amazing tutorial by [Travis Neilson over at DevTips](https://www.youtube.com/watch?v=T6jKLsxbFg4&list=PL0CB3OvPhDA_STygmp3sDenx3UpdOMk7P). The purpose of this theme is to provide a clean and simple website for your portfolio. Emphasis is placed on your projects, which are shown front and center on the home page.
+This is a portfolio Jekyll theme built from the ground up, using the [DevTips Starter Kit](http://devtipsstarterkit.com/) as a foundation for starting, and following closely the amazing tutorial by [Travis Neilson over at DevTips](https://www.youtube.com/watch?v=T6jKLsxbFg4&list=PL0CB3OvPhDA_STygmp3sDenx3UpdOMk7P). For a guide on how to start a blog or personal website using Jekyll and GitHub Pages, please check out [this article](https://paulle.ca/how-to-start-a-blog-or-personal-website-using-jekyll-and-github-pages).
 
 Everything that you will ever need to know about this Jekyll theme is included in the README below, which you can also find in [the demo site](https://lenpaul.github.io/portfolio-jekyll-theme/). For a guide on how to deploy a Jekyll site using GitHub Pages, please check out [this article](https://paulle.ca/jekyll-tutorials/deploy-jekyll-site-github-pages).
 
