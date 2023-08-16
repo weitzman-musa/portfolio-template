@@ -7,6 +7,8 @@
   --color-accent: #FF4100;
   --color-highlight: #F5F4F0;
 
+  --header-size: 3.5rem;
+
   font-family: 'Montserrat', sans-serif;
   padding: 0;
   margin: 0;
@@ -15,13 +17,19 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: var(--header-size);
 }
 
 header, main, footer {
-  padding: var(--spacing);
+  padding: 0 var(--spacing);
+}
+
+main {
+  padding-top: var(--spacing);
 }
 
 footer {
+  padding-top: var(--spacing);
   background-color: black;
   color: white;
 
@@ -42,6 +50,11 @@ footer {
     color: black;
     text-align: center;
   }
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
 }
 
 h2 {
@@ -78,13 +91,30 @@ h2::after {
 
 /* Header mobile menu toggle */
 
+.logo {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - var(--header-size));
+  padding: var(--spacing);
+  box-sizing: border-box;
+  height: var(--header-size);
+  z-index: 1;
+  background-color: white;
+
+  img {
+    height: 3rem;
+  }
+}
 .menu-trigger {
   display: block;
   position: fixed;
   top: 0;
   right: 0;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: var(--header-size);
+  height: var(--header-size);
   border: none;
   padding: 1.125rem;
   z-index: 2;
@@ -100,7 +130,7 @@ h2::after {
 
 .menu-panel-open .menu-trigger {
   width: 100%;
-  padding-left: calc(100% - 3.5rem + 1.125rem);
+  padding-left: calc(100% - var(--header-size) + 1.125rem);
 
   // Counterintuitively, this is the transition-delay when transitioning TO
   // this state.
@@ -173,7 +203,7 @@ h2::after {
 }
 
 .menu-panel-open nav {
-  transform: translateY(3.5rem);
+  transform: translateY(var(--header-size));
 
   // Counterintuitively, this is the transition-delay when transitioning TO
   // this state.
@@ -181,6 +211,10 @@ h2::after {
 }
 
 /* Projects */
+
+main {
+  background-color: var(--color-highlight);
+}
 
 .project-link {
   display: block;

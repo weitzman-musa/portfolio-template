@@ -1,8 +1,10 @@
 #-------------------------------
 # General Site Settings
 
+logo: '/assets/img/musa-logo.png'
+
 menu:
-- {name: 'Projects', url: ''}
+- {name: 'Projects', url: ' '}
 - {name: 'Blog',     url: 'blog'}
 - {name: 'About',    url: 'about'}
 - {name: 'Contact',  url: 'contact'}
