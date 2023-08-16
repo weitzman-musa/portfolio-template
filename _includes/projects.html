@@ -3,7 +3,7 @@
     <h2>Projects</h2>
 
     {% for project in site.projects %}
-      <a class="project-link" href="{{ project.url }}">
+      <a class="project-link" href="{{ project.url | relative_url }}">
         <div class="project-thumbnail-wrapper">
           <img class="project-thumbnail" src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}">
         </div>
