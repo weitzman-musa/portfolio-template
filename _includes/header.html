@@ -2,6 +2,16 @@
   <div class="logo">
     <a href="{{ '/' | relative_url }}/">{{ site.title }}</a>
   </div>
+
+  <button type="button" id="menubutton" aria-haspopup="true" aria-controls="menu-panel" class="menu-trigger">
+    <span class="visually-hidden">Toggle Menu</span>
+    <div class="menu-trigger-bars" aria-hidden="true">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </button>
+
   <nav>
     {% for item in site.data.settings.menu %}
       <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
