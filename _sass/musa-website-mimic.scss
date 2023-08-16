@@ -8,6 +8,7 @@
   --color-highlight: #F5F4F0;
 
   --header-size: 3.5rem;
+  --header-z-index: 10;
 
   font-family: 'Montserrat', sans-serif;
   padding: 0;
@@ -101,7 +102,7 @@ h2::after {
   padding: var(--spacing);
   box-sizing: border-box;
   height: var(--header-size);
-  z-index: 1;
+  z-index: var(--header-z-index);
   background-color: white;
 
   img {
@@ -117,9 +118,10 @@ h2::after {
   height: var(--header-size);
   border: none;
   padding: 1.125rem;
-  z-index: 2;
+  z-index: calc(var(--header-z-index) + 1);
   box-sizing: border-box;
   background-color: var(--color-accent);
+  cursor: pointer;
   transition: width 0.2s ease-in-out,
               padding-left 0.2s ease-in-out;
 
@@ -182,7 +184,7 @@ h2::after {
 
 .site-header nav {
   position: fixed;
-  z-index: 1;
+  z-index: var(--header-z-index);
   left: 0;
   top: 0;
   width: 100%;
