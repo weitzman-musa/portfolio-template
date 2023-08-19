@@ -19,10 +19,23 @@ body {
   margin: 0;
   padding: 0;
   padding-top: var(--header-size);
+  background-color: black;
+}
+
+.site-container {
+  // Setting overflow to auto is used here to contain the margins of child
+  // elements, so that the background color of the container is respected
+  // to the very edges of the child elements.
+  overflow: auto;
+  background: white;
 }
 
 header, main, footer {
   padding: 0 var(--spacing);
+  // Setting overflow to auto is used here to contain the margins of child
+  // elements, so that the background color of the container is respected
+  // to the very edges of the child elements.
+  overflow: auto;
 }
 
 main {
@@ -278,4 +291,23 @@ h2::after {
 .featured-image-container {
   padding-top: var(--spacing);
   padding-bottom: var(--spacing);
+}
+
+/* Blog List */
+
+.blog-label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.blog-unit {
+  display: block;
+  padding-bottom: calc(var(--spacing) * 3);
+}
+
+/* Blog Post */
+
+.post-container img {
+  max-width: 100%;
 }
