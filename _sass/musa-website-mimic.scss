@@ -27,10 +27,12 @@ header, main, footer {
 
 main {
   padding-top: var(--spacing);
+  background-color: var(--color-highlight);
 }
 
 footer {
   padding-top: var(--spacing);
+  padding-bottom: calc(var(--spacing) * 4);
   background-color: black;
   color: white;
 
@@ -212,11 +214,7 @@ h2::after {
   transition-delay: 0.2s;
 }
 
-/* Projects */
-
-main {
-  background-color: var(--color-highlight);
-}
+/* Project list on the home page */
 
 .project-link {
   display: block;
@@ -269,4 +267,15 @@ main {
     margin-left: 1rem;
     color: var(--color-accent);
   }
+}
+
+/* Project page */
+
+.featured-image {
+  width: 100%;
+}
+
+.featured-image-container {
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
 }

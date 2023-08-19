@@ -1,10 +1,10 @@
-<div class="image-container">
+<div class="featured-image-container">
   <a href="{{ include.url }}" target="_blank">
-    <img src="{{ site.github.url }}/assets/img/{{ include.image }}" alt="Avatar" class="image">
+    <img src="{{ '/assets/img' | relative_url }}/{{ include.image }}" alt="{{ include.description }}" title="{{ include.description }}" class="featured-image">
     <div class="overlay">
       <div class="text">
-        {% if include.text %}
-          {{ include.text }} <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        {% if include.action %}
+          {{ include.action }} <i class="fa fa-arrow-right" aria-hidden="true"></i>
         {% else %}
           View Demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
         {% endif %}
