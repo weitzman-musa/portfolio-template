@@ -68,9 +68,19 @@ footer {
   }
 }
 
+// This h1 represents the page title
 h1 {
   font-size: 4rem;
   font-weight: 300;
+}
+
+// There may be other h1 elements in the main content, so we need to
+// distinguish them from the page title.
+main h1 {
+  border-left: 1px solid var(--color-accent);
+  padding: var(--spacing);
+  margin-left: calc(-1 * var(--spacing));
+  font-size: 2rem;
 }
 
 h2 {
