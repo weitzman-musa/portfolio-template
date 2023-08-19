@@ -1,7 +1,9 @@
 :root {
   --spacing: 12px;
-  --col-count: 3;
-  --col-spacing: 2rem;
+  --wide-spacing: calc((100% - 1024px) / 2);
+
+  --col-count: 1;
+  --col-spacing: var(--spacing);
   --col-width: calc((100% - (var(--col-count) - 1) * var(--col-spacing)) / var(--col-count));
 
   --color-accent: #FF4100;
@@ -241,6 +243,7 @@ h2::after {
 
 .project-link {
   display: block;
+  width: var(--col-width);
   text-decoration: none;
   color: inherit;
   margin-bottom: calc(var(--spacing) * 3);
@@ -292,6 +295,17 @@ h2::after {
   }
 }
 
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--col-spacing);
+}
+
+.projects-container h2 {
+  width: 100%;
+}
+
 /* Project page */
 
 .featured-image {
@@ -320,4 +334,34 @@ h2::after {
 
 .post-container img {
   max-width: 100%;
+}
+
+/*
+  Media breakpoint definitions (borrowed from the Chrome dev tools):
+
+  - small: 425px;
+  - medium: 768px;
+  - large: 1024px;
+*/
+
+@media screen and (min-width: 425px) {
+  :root {
+    --col-count: 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --col-count: 3;
+  }
+
+  .projects-container {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header, main, footer {
+    padding: 0 var(--wide-spacing);
+  }
 }
