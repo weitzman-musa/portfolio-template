@@ -4,7 +4,7 @@ This is a template for a portfolio website for MUSA students. It borrows some st
 
 - **About Me:** You can use this space for a headshot, a short bio and/or work statement, and links to your GitHub and social media profiles. You can also include contact informatin (email address) here.
 - **Projects:** This section is for your projects. You can add as many as you want, and they will be displayed in a grid. Each project can have a title, an image, a short description, a link to the project's GitHub repository, and a link to the project's website (if applicable). You can also add longer project descriptions, which will be displayed on a separate page. This can be useful when the there are particular parts of the work that you want to highlight that may not be immediately apparent from the project's website.
-- **Resume:** This section is for your resume. You can upload a PDF of your resume and it will be linked from . You can also add a link to a PDF of your resume, which will be displayed as a button.
+- **Resume:** You can upload and add a link to a PDF of your resume, which will be displayed as a button.
 - **Blog:** This section is for your blog posts. You can add as many as you want, and they will be displayed in a grid. Each blog post can have a title, an image, a short description, and a link to the post's website (if applicable). You can also add longer blog post descriptions, which will be displayed on a separate page. This can be useful when the there are particular parts of the work that you want to highlight that may not be immediately apparent from the post's website.
 
 This template is based heavily on the [Portfolio Jekyll Theme](https://github.com/LeNPaul/portfolio-jekyll-theme#what-is-jekyll), the documentation for which is reproduced below.
@@ -99,13 +99,14 @@ Portfolio Jekyll Theme/
 |  └── settings.yml            # Theme settings and custom text
 ├── _includes                  # Theme includes
 ├── _layouts                   # Theme layouts (see below for details)
-├── _posts                     # Where all your posts will go
+├── _posts                     # Where all your blog posts will go
+├── _projects                  # Project pages
 ├── assets                     # Style sheets and images are found here
 |  ├── css                     # Style sheets go here
-|  |  └── all.sass             # Main SASS file
-|  └── img                     # Images go here
+|  |  └── styles.scss          # Main SCSS file
+|  ├── img                     # Images go here
+|  └── js                      # Scripts go here
 ├── pages                      # Menu pages
-├── projects                   # Project pages
 ├── _config.yml                # Site build settings
 ├── Gemfile                    # Ruby Gemfile for managing Jekyll plugins
 └── index.md                   # Home page
@@ -113,7 +114,7 @@ Portfolio Jekyll Theme/
 
 ### Starting From Scratch
 
-To completely start from scratch, simply delete all the files in the `_posts`, `assets/img`, and `menu` folder, and add your own content. You may also replace the `README.md` file with your own README. Everything in the `_data` folder and `_config.yml` file can be edited to suit your needs. You may also change the `favicon.ico` file to your own favicon.
+To completely start from scratch, simply delete all the files in the `_posts`, `assets/img`, `_projects`, and `pages` folders, and add your own content. You may also replace the `README.md` file with your own README. Everything in the `_data` folder and `_config.yml` file can be edited to suit your needs. You may also change the `favicon.ico` file to your own favicon.
 
 ## Configuration
 
@@ -131,7 +132,7 @@ In the `settings.yml` file found in the `_data` folder, you will be able to cust
 
 ### Adding Menu and Project Pages
 
-The menu pages are found in the `menu` folder in the root directory, and can be added to your menu in the `settings.yml` file. Similarly, the project pages are found in the `projects` folder in the root directory, and can be added to your site in the `settings.yml` file. The images for your portfolio projects are stored in the `assets/img/projects/proj-n` folder, and should be named `thumb.jpg`.
+The menu pages are found in the `menu` folder in the root directory, and can be added to your menu in the `settings.yml` file. Similarly, the project pages are found in the `_projects` folder in the root directory, and can be added to your site in the `settings.yml` file. The images for your portfolio projects are stored in the `assets/img/projects/proj-n` folder, and should be named `thumb.jpg`.
 
 ### Posts
 

@@ -4,9 +4,12 @@ layout: default
 
 <main class="projects-main">
 
-  <section class="intro-statement">
+  <section class="intro-container">
     {% if site.data.settings.intro_title %}<h1>{{ site.data.settings.intro_title }}</h1>{% endif %}
     {% if site.data.settings.intro_text %}<p>{{ site.data.settings.intro_text }}</p>{% endif %}
+    {% if site.data.settings.resume %}<div class="resume-button-wrapper">
+      <a class="button" href="{{ site.data.settings.resume }}">{{ site.data.settings.resume_link_title }}</a>
+    </div>{% endif %}
   </section>
 
   {% include projects.html %}

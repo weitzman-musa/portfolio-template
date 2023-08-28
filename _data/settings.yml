@@ -9,6 +9,9 @@ intro_text: |
   here. This is a great place to very succinctly tell a visitor what drives you
   and what you're passionate about.
 
+resume: '/assets/files/resume.pdf'
+resume_link_title: Download Resume
+
 menu:
 - {name: 'Projects', url: ' '}
 - {name: 'Blog',     url: 'blog'}
