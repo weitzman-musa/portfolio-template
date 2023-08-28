@@ -1,17 +1,26 @@
 #-------------------------------
 # General Site Settings
 
+# The site logo that shows up in the top-left corner of the page.
 logo: '/assets/img/musa-logo.png'
 
+# A brief introduction or mission statement that appears at the top of the
+# portfolio home page, above the project list. If you don't want one of the
+# intro_title or intro_text to show up, just set the appropriate value to null.
 intro_title: Personal Mission 10-word Summary
 intro_text: |
   A brief couple of sentences describing your personal mission statement goes
   here. This is a great place to very succinctly tell a visitor what drives you
   and what you're passionate about.
 
+# The link that is used for the resume button, below the intro text on the
+# portfolio home page. This link will also be used in the drop down menu. If
+# you don't want the resume link to show up, set the resume value to null.
 resume: '/assets/files/resume.pdf'
 resume_link_title: Download Resume
 
+# The items that will show up in the drop down menu (in addition to the resume
+# link, if given).
 menu:
 - {name: 'Projects', url: ' '}
 - {name: 'Blog',     url: 'blog'}
