@@ -1,0 +1,11 @@
+---
+layout: page
+---
+
+<div class="headshot-wrapper">
+  {% if page.headshot %}
+    <img class="headshot" src="{{ page.headshot | relative_url }}" alt="{{ page.title }}">
+  {% endif %}
+</div>
+
+{{ content }}

@@ -1,6 +1,7 @@
 ---
-layout: page
-title: About
+layout: about
+title: About Me
+headshot: /assets/img/headshot.webp
 permalink: /about
 ---
 

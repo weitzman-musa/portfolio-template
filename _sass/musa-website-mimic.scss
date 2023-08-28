@@ -265,6 +265,17 @@ h2::after {
   text-align: center;
 }
 
+/* About page */
+
+.headshot {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+}
+
 /* Project list on the home page */
 
 .project-link {
@@ -383,6 +394,12 @@ post-container img {
 
   .projects-container {
     justify-content: flex-start;
+  }
+
+  .headshot {
+    float: left;
+    margin-right: var(--spacing);
+    margin-bottom: var(--spacing);
   }
 }
 
