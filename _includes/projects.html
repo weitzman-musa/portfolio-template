@@ -1,19 +1,17 @@
-<main class="projects-main">
-  <div class="projects-container">
-    <h2>Projects</h2>
+<section class="projects-container">
+  <h2>Projects</h2>
 
-    {% for project in site.projects %}
-      <a class="project-link" href="{{ project.url | relative_url }}">
-        <div class="project-thumbnail-wrapper">
-          <img class="project-thumbnail" src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}">
-        </div>
-        <div class="project-label">
-          {{ project.title }}
-        </div>
-        <div class="project-link-arrow">
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </div>
-      </a>
-    {% endfor %}
-  </div>
-</main>
+  {% for project in site.projects %}
+    <a class="project-link" href="{{ project.url | relative_url }}">
+      <div class="project-thumbnail-wrapper">
+        <img class="project-thumbnail" src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}">
+      </div>
+      <div class="project-label">
+        {{ project.title }}
+      </div>
+      <div class="project-link-arrow">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </div>
+    </a>
+  {% endfor %}
+</section>
